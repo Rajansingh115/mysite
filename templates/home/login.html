@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} login {% endblock title %}
+
+{% block body %} 
+<div class="container my-3"> 
+<h3>Login CodeWithRajan </h3>
+<form method="post" action="/login/" > 
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="nameHelp" class="form-text">We'll never share your Name with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPhone" class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" id="exampleInputpassword">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{% endblock body %}
