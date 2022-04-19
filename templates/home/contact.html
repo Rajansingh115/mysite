@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 
 {% block title %} contact {% endblock title %}
-
+{% load static %}
 {% block body %} 
-<div class="container my-3"> 
+<div class="container-fluid mt-2"> 
+<div class="col-sm-6 pr-2" style="float: left">
+<img src="{% static 'contactus.jpg' %}"class="img-fluid rounded-start f-left" alt="rajan singh" style="height: 550px; width:600px">
+</div>
+<div class="col-sm-6" style="float: right">
 <h3>Contact CodeWithRajan </h3>
 <form method="post" action="/contact/" > 
     {% csrf_token %}
@@ -32,5 +36,6 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+</div>
 </div>
 {% endblock body %}
