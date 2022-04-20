@@ -25,8 +25,10 @@ SECRET_KEY = 'hr#&_fr3mjqcph90*w@j8-t42d6r+rtu0s#ss8gnx#s$j29igw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
-
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://rajansite.herokuapp.com/',
+'localhost',
+'127.0.0.1']
 
 # Application definition
 
